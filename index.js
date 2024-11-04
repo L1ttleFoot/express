@@ -19,6 +19,6 @@ async function startApp() {
     }
 }
 
-export default app;
+startApp()
 
-//startApp()
+export default app;
