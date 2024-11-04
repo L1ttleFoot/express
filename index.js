@@ -1,4 +1,4 @@
-import express from 'express';
+const express =  require('express');
 
 const app = express()
 const PORT = 8080
@@ -19,6 +19,5 @@ async function startApp() {
     }
 }
 
-startApp()
 
-export default app;
+module.exports = app;
