@@ -19,6 +19,6 @@ async function startApp() {
     }
 }
 
-module.exports = app;
+export default app;
 
 //startApp()
