@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "ts-node ./src"
-    
+    "start": "ts-node ./dist",
+    "build": "tsc --build",
+    "dev": "nodemon ./src/index.ts",
+    "test": "jest",
+    "vercel-build": "tsc --build"
   },
   "author": "",
   "license": "ISC",
