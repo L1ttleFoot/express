@@ -2,19 +2,25 @@
   "name": "express-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "vercel-build":"echo hello"
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc --build",
+    "dev": "nodemon ./src/index.ts",
+    "test": "jest",
+    "vercel-build": "echo hello"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "@types/pg": "^8.11.11",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }
